@@ -16,5 +16,12 @@ namespace pryBonaviaInventario
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            clsConexionBD clsConexionBD = new clsConexionBD();
+
+            clsConexionBD.ConectarBD();
+        }
     }
 }

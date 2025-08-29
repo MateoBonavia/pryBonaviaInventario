@@ -30,29 +30,22 @@
         {
             tabControl1 = new TabControl();
             agregar = new TabPage();
-            modificar = new TabPage();
-            eliminar = new TabPage();
-            reporte = new TabPage();
-            lblCodigo = new Label();
-            lblNombre = new Label();
-            lblDescripcion = new Label();
-            lblPrecio = new Label();
-            lblStock = new Label();
-            lblCategorias = new Label();
-            txtAgregarDescripcion = new TextBox();
-            txtAgregarCodigo = new TextBox();
-            txtAgregarNombre = new TextBox();
-            txtAgregarPrecio = new TextBox();
-            txtAgregarStock = new TextBox();
-            txtAgregarCategorias = new TextBox();
+            label7 = new Label();
             btnAgregar = new Button();
-            gpbBuscarModificar = new GroupBox();
-            txtBusqueda_modificar = new TextBox();
-            lblBuscarModificar = new Label();
-            rdbNombre_modificar = new RadioButton();
-            rdbCodigo_modificar = new RadioButton();
-            rdbCategoria_modificar = new RadioButton();
-            btnBuscar_modificar = new Button();
+            txtAgregarCategorias = new TextBox();
+            txtAgregarStock = new TextBox();
+            txtAgregarPrecio = new TextBox();
+            txtAgregarNombre = new TextBox();
+            txtAgregarCodigo = new TextBox();
+            txtAgregarDescripcion = new TextBox();
+            lblCategorias = new Label();
+            lblStock = new Label();
+            lblPrecio = new Label();
+            lblDescripcion = new Label();
+            lblNombre = new Label();
+            lblCodigo = new Label();
+            modificar = new TabPage();
+            btnModificar = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -65,7 +58,14 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            btnModificar = new Button();
+            gpbBuscarModificar = new GroupBox();
+            btnBuscar_modificar = new Button();
+            rdbCategoria_modificar = new RadioButton();
+            rdbCodigo_modificar = new RadioButton();
+            rdbNombre_modificar = new RadioButton();
+            lblBuscarModificar = new Label();
+            txtBusqueda_modificar = new TextBox();
+            eliminar = new TabPage();
             btnEliminar = new Button();
             txtCategorias_eliminar = new TextBox();
             txtStock_eliminar = new TextBox();
@@ -86,12 +86,12 @@
             rdbNombre_eliminar = new RadioButton();
             label13 = new Label();
             txtBuscar_eliminar = new TextBox();
-            label7 = new Label();
+            reporte = new TabPage();
             tabControl1.SuspendLayout();
             agregar.SuspendLayout();
             modificar.SuspendLayout();
-            eliminar.SuspendLayout();
             gpbBuscarModificar.SuspendLayout();
+            eliminar.SuspendLayout();
             gpbBuscar_eliminar.SuspendLayout();
             SuspendLayout();
             // 
@@ -131,6 +131,122 @@
             agregar.Text = "Agregar";
             agregar.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(118, 12);
+            label7.Name = "label7";
+            label7.Size = new Size(274, 24);
+            label7.TabIndex = 13;
+            label7.Text = "Agregar nuevo producto";
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new Point(220, 269);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(172, 24);
+            btnAgregar.TabIndex = 12;
+            btnAgregar.Text = "Guardar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // txtAgregarCategorias
+            // 
+            txtAgregarCategorias.Location = new Point(220, 181);
+            txtAgregarCategorias.Name = "txtAgregarCategorias";
+            txtAgregarCategorias.Size = new Size(172, 23);
+            txtAgregarCategorias.TabIndex = 11;
+            // 
+            // txtAgregarStock
+            // 
+            txtAgregarStock.Location = new Point(220, 152);
+            txtAgregarStock.Name = "txtAgregarStock";
+            txtAgregarStock.Size = new Size(172, 23);
+            txtAgregarStock.TabIndex = 10;
+            // 
+            // txtAgregarPrecio
+            // 
+            txtAgregarPrecio.Location = new Point(220, 123);
+            txtAgregarPrecio.Name = "txtAgregarPrecio";
+            txtAgregarPrecio.Size = new Size(172, 23);
+            txtAgregarPrecio.TabIndex = 9;
+            // 
+            // txtAgregarNombre
+            // 
+            txtAgregarNombre.Location = new Point(220, 94);
+            txtAgregarNombre.Name = "txtAgregarNombre";
+            txtAgregarNombre.Size = new Size(172, 23);
+            txtAgregarNombre.TabIndex = 8;
+            // 
+            // txtAgregarCodigo
+            // 
+            txtAgregarCodigo.Location = new Point(220, 65);
+            txtAgregarCodigo.Name = "txtAgregarCodigo";
+            txtAgregarCodigo.Size = new Size(172, 23);
+            txtAgregarCodigo.TabIndex = 7;
+            // 
+            // txtAgregarDescripcion
+            // 
+            txtAgregarDescripcion.Location = new Point(220, 210);
+            txtAgregarDescripcion.Multiline = true;
+            txtAgregarDescripcion.Name = "txtAgregarDescripcion";
+            txtAgregarDescripcion.Size = new Size(172, 53);
+            txtAgregarDescripcion.TabIndex = 6;
+            // 
+            // lblCategorias
+            // 
+            lblCategorias.AutoSize = true;
+            lblCategorias.Location = new Point(118, 184);
+            lblCategorias.Name = "lblCategorias";
+            lblCategorias.Size = new Size(77, 15);
+            lblCategorias.TabIndex = 5;
+            lblCategorias.Text = "Categorías";
+            // 
+            // lblStock
+            // 
+            lblStock.AutoSize = true;
+            lblStock.Location = new Point(118, 155);
+            lblStock.Name = "lblStock";
+            lblStock.Size = new Size(42, 15);
+            lblStock.TabIndex = 4;
+            lblStock.Text = "Stock";
+            // 
+            // lblPrecio
+            // 
+            lblPrecio.AutoSize = true;
+            lblPrecio.Location = new Point(118, 126);
+            lblPrecio.Name = "lblPrecio";
+            lblPrecio.Size = new Size(49, 15);
+            lblPrecio.TabIndex = 3;
+            lblPrecio.Text = "Precio";
+            // 
+            // lblDescripcion
+            // 
+            lblDescripcion.AutoSize = true;
+            lblDescripcion.Location = new Point(118, 213);
+            lblDescripcion.Name = "lblDescripcion";
+            lblDescripcion.Size = new Size(84, 15);
+            lblDescripcion.TabIndex = 2;
+            lblDescripcion.Text = "Descripción";
+            // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(118, 97);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(49, 15);
+            lblNombre.TabIndex = 1;
+            lblNombre.Text = "Nombre";
+            // 
+            // lblCodigo
+            // 
+            lblCodigo.AutoSize = true;
+            lblCodigo.Location = new Point(118, 68);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(49, 15);
+            lblCodigo.TabIndex = 0;
+            lblCodigo.Text = "Código";
+            // 
             // modificar
             // 
             modificar.Controls.Add(btnModificar);
@@ -155,216 +271,14 @@
             modificar.Text = "Modificar";
             modificar.UseVisualStyleBackColor = true;
             // 
-            // eliminar
+            // btnModificar
             // 
-            eliminar.Controls.Add(btnEliminar);
-            eliminar.Controls.Add(txtCategorias_eliminar);
-            eliminar.Controls.Add(txtStock_eliminar);
-            eliminar.Controls.Add(txtPrecio_eliminar);
-            eliminar.Controls.Add(txtNombre_eliminar);
-            eliminar.Controls.Add(txtCodigo_eliminar);
-            eliminar.Controls.Add(txtDescripcion_eliminar);
-            eliminar.Controls.Add(lblCategorias_eliminar);
-            eliminar.Controls.Add(lblStock_eliminar);
-            eliminar.Controls.Add(lblPrecio_eliminar);
-            eliminar.Controls.Add(lblDescripcion_eliminar);
-            eliminar.Controls.Add(lblNombre_eliminar);
-            eliminar.Controls.Add(lblCodigo_eliminar);
-            eliminar.Controls.Add(gpbBuscar_eliminar);
-            eliminar.Location = new Point(4, 24);
-            eliminar.Name = "eliminar";
-            eliminar.Size = new Size(506, 309);
-            eliminar.TabIndex = 2;
-            eliminar.Text = "Eliminar";
-            eliminar.UseVisualStyleBackColor = true;
-            // 
-            // reporte
-            // 
-            reporte.Location = new Point(4, 24);
-            reporte.Name = "reporte";
-            reporte.Size = new Size(506, 309);
-            reporte.TabIndex = 3;
-            reporte.Text = "Reporte";
-            reporte.UseVisualStyleBackColor = true;
-            // 
-            // lblCodigo
-            // 
-            lblCodigo.AutoSize = true;
-            lblCodigo.Location = new Point(118, 68);
-            lblCodigo.Name = "lblCodigo";
-            lblCodigo.Size = new Size(49, 15);
-            lblCodigo.TabIndex = 0;
-            lblCodigo.Text = "Código";
-            // 
-            // lblNombre
-            // 
-            lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(118, 97);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(49, 15);
-            lblNombre.TabIndex = 1;
-            lblNombre.Text = "Nombre";
-            // 
-            // lblDescripcion
-            // 
-            lblDescripcion.AutoSize = true;
-            lblDescripcion.Location = new Point(118, 213);
-            lblDescripcion.Name = "lblDescripcion";
-            lblDescripcion.Size = new Size(84, 15);
-            lblDescripcion.TabIndex = 2;
-            lblDescripcion.Text = "Descripción";
-            // 
-            // lblPrecio
-            // 
-            lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(118, 126);
-            lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(49, 15);
-            lblPrecio.TabIndex = 3;
-            lblPrecio.Text = "Precio";
-            // 
-            // lblStock
-            // 
-            lblStock.AutoSize = true;
-            lblStock.Location = new Point(118, 155);
-            lblStock.Name = "lblStock";
-            lblStock.Size = new Size(42, 15);
-            lblStock.TabIndex = 4;
-            lblStock.Text = "Stock";
-            // 
-            // lblCategorias
-            // 
-            lblCategorias.AutoSize = true;
-            lblCategorias.Location = new Point(118, 184);
-            lblCategorias.Name = "lblCategorias";
-            lblCategorias.Size = new Size(77, 15);
-            lblCategorias.TabIndex = 5;
-            lblCategorias.Text = "Categorías";
-            // 
-            // txtAgregarDescripcion
-            // 
-            txtAgregarDescripcion.Location = new Point(220, 210);
-            txtAgregarDescripcion.Multiline = true;
-            txtAgregarDescripcion.Name = "txtAgregarDescripcion";
-            txtAgregarDescripcion.Size = new Size(172, 53);
-            txtAgregarDescripcion.TabIndex = 6;
-            // 
-            // txtAgregarCodigo
-            // 
-            txtAgregarCodigo.Location = new Point(220, 65);
-            txtAgregarCodigo.Name = "txtAgregarCodigo";
-            txtAgregarCodigo.Size = new Size(172, 23);
-            txtAgregarCodigo.TabIndex = 7;
-            // 
-            // txtAgregarNombre
-            // 
-            txtAgregarNombre.Location = new Point(220, 94);
-            txtAgregarNombre.Name = "txtAgregarNombre";
-            txtAgregarNombre.Size = new Size(172, 23);
-            txtAgregarNombre.TabIndex = 8;
-            // 
-            // txtAgregarPrecio
-            // 
-            txtAgregarPrecio.Location = new Point(220, 123);
-            txtAgregarPrecio.Name = "txtAgregarPrecio";
-            txtAgregarPrecio.Size = new Size(172, 23);
-            txtAgregarPrecio.TabIndex = 9;
-            // 
-            // txtAgregarStock
-            // 
-            txtAgregarStock.Location = new Point(220, 152);
-            txtAgregarStock.Name = "txtAgregarStock";
-            txtAgregarStock.Size = new Size(172, 23);
-            txtAgregarStock.TabIndex = 10;
-            // 
-            // txtAgregarCategorias
-            // 
-            txtAgregarCategorias.Location = new Point(220, 181);
-            txtAgregarCategorias.Name = "txtAgregarCategorias";
-            txtAgregarCategorias.Size = new Size(172, 23);
-            txtAgregarCategorias.TabIndex = 11;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new Point(220, 269);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(172, 24);
-            btnAgregar.TabIndex = 12;
-            btnAgregar.Text = "Guardar";
-            btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // gpbBuscarModificar
-            // 
-            gpbBuscarModificar.Controls.Add(btnBuscar_modificar);
-            gpbBuscarModificar.Controls.Add(rdbCategoria_modificar);
-            gpbBuscarModificar.Controls.Add(rdbCodigo_modificar);
-            gpbBuscarModificar.Controls.Add(rdbNombre_modificar);
-            gpbBuscarModificar.Controls.Add(lblBuscarModificar);
-            gpbBuscarModificar.Controls.Add(txtBusqueda_modificar);
-            gpbBuscarModificar.Location = new Point(6, 6);
-            gpbBuscarModificar.Name = "gpbBuscarModificar";
-            gpbBuscarModificar.Size = new Size(494, 79);
-            gpbBuscarModificar.TabIndex = 0;
-            gpbBuscarModificar.TabStop = false;
-            gpbBuscarModificar.Text = "Buscar";
-            // 
-            // txtBusqueda_modificar
-            // 
-            txtBusqueda_modificar.Location = new Point(6, 42);
-            txtBusqueda_modificar.Name = "txtBusqueda_modificar";
-            txtBusqueda_modificar.Size = new Size(324, 23);
-            txtBusqueda_modificar.TabIndex = 15;
-            // 
-            // lblBuscarModificar
-            // 
-            lblBuscarModificar.AutoSize = true;
-            lblBuscarModificar.Location = new Point(6, 19);
-            lblBuscarModificar.Name = "lblBuscarModificar";
-            lblBuscarModificar.Size = new Size(84, 15);
-            lblBuscarModificar.TabIndex = 16;
-            lblBuscarModificar.Text = "Buscar por:";
-            // 
-            // rdbNombre_modificar
-            // 
-            rdbNombre_modificar.AutoSize = true;
-            rdbNombre_modificar.Location = new Point(96, 17);
-            rdbNombre_modificar.Name = "rdbNombre_modificar";
-            rdbNombre_modificar.Size = new Size(67, 19);
-            rdbNombre_modificar.TabIndex = 17;
-            rdbNombre_modificar.TabStop = true;
-            rdbNombre_modificar.Text = "Nombre";
-            rdbNombre_modificar.UseVisualStyleBackColor = true;
-            // 
-            // rdbCodigo_modificar
-            // 
-            rdbCodigo_modificar.AutoSize = true;
-            rdbCodigo_modificar.Location = new Point(169, 17);
-            rdbCodigo_modificar.Name = "rdbCodigo_modificar";
-            rdbCodigo_modificar.Size = new Size(67, 19);
-            rdbCodigo_modificar.TabIndex = 18;
-            rdbCodigo_modificar.TabStop = true;
-            rdbCodigo_modificar.Text = "Código";
-            rdbCodigo_modificar.UseVisualStyleBackColor = true;
-            // 
-            // rdbCategoria_modificar
-            // 
-            rdbCategoria_modificar.AutoSize = true;
-            rdbCategoria_modificar.Location = new Point(242, 17);
-            rdbCategoria_modificar.Name = "rdbCategoria_modificar";
-            rdbCategoria_modificar.Size = new Size(88, 19);
-            rdbCategoria_modificar.TabIndex = 19;
-            rdbCategoria_modificar.TabStop = true;
-            rdbCategoria_modificar.Text = "Categoría";
-            rdbCategoria_modificar.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar_modificar
-            // 
-            btnBuscar_modificar.Location = new Point(342, 42);
-            btnBuscar_modificar.Name = "btnBuscar_modificar";
-            btnBuscar_modificar.Size = new Size(146, 24);
-            btnBuscar_modificar.TabIndex = 20;
-            btnBuscar_modificar.Text = "Buscar";
-            btnBuscar_modificar.UseVisualStyleBackColor = true;
+            btnModificar.Location = new Point(348, 278);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(146, 24);
+            btnModificar.TabIndex = 21;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -463,14 +377,101 @@
             label6.TabIndex = 12;
             label6.Text = "Código";
             // 
-            // btnModificar
+            // gpbBuscarModificar
             // 
-            btnModificar.Location = new Point(348, 278);
-            btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(146, 24);
-            btnModificar.TabIndex = 21;
-            btnModificar.Text = "Modificar";
-            btnModificar.UseVisualStyleBackColor = true;
+            gpbBuscarModificar.Controls.Add(btnBuscar_modificar);
+            gpbBuscarModificar.Controls.Add(rdbCategoria_modificar);
+            gpbBuscarModificar.Controls.Add(rdbCodigo_modificar);
+            gpbBuscarModificar.Controls.Add(rdbNombre_modificar);
+            gpbBuscarModificar.Controls.Add(lblBuscarModificar);
+            gpbBuscarModificar.Controls.Add(txtBusqueda_modificar);
+            gpbBuscarModificar.Location = new Point(6, 6);
+            gpbBuscarModificar.Name = "gpbBuscarModificar";
+            gpbBuscarModificar.Size = new Size(494, 79);
+            gpbBuscarModificar.TabIndex = 0;
+            gpbBuscarModificar.TabStop = false;
+            gpbBuscarModificar.Text = "Buscar";
+            // 
+            // btnBuscar_modificar
+            // 
+            btnBuscar_modificar.Location = new Point(342, 42);
+            btnBuscar_modificar.Name = "btnBuscar_modificar";
+            btnBuscar_modificar.Size = new Size(146, 24);
+            btnBuscar_modificar.TabIndex = 20;
+            btnBuscar_modificar.Text = "Buscar";
+            btnBuscar_modificar.UseVisualStyleBackColor = true;
+            // 
+            // rdbCategoria_modificar
+            // 
+            rdbCategoria_modificar.AutoSize = true;
+            rdbCategoria_modificar.Location = new Point(242, 17);
+            rdbCategoria_modificar.Name = "rdbCategoria_modificar";
+            rdbCategoria_modificar.Size = new Size(88, 19);
+            rdbCategoria_modificar.TabIndex = 19;
+            rdbCategoria_modificar.TabStop = true;
+            rdbCategoria_modificar.Text = "Categoría";
+            rdbCategoria_modificar.UseVisualStyleBackColor = true;
+            // 
+            // rdbCodigo_modificar
+            // 
+            rdbCodigo_modificar.AutoSize = true;
+            rdbCodigo_modificar.Location = new Point(169, 17);
+            rdbCodigo_modificar.Name = "rdbCodigo_modificar";
+            rdbCodigo_modificar.Size = new Size(67, 19);
+            rdbCodigo_modificar.TabIndex = 18;
+            rdbCodigo_modificar.TabStop = true;
+            rdbCodigo_modificar.Text = "Código";
+            rdbCodigo_modificar.UseVisualStyleBackColor = true;
+            // 
+            // rdbNombre_modificar
+            // 
+            rdbNombre_modificar.AutoSize = true;
+            rdbNombre_modificar.Location = new Point(96, 17);
+            rdbNombre_modificar.Name = "rdbNombre_modificar";
+            rdbNombre_modificar.Size = new Size(67, 19);
+            rdbNombre_modificar.TabIndex = 17;
+            rdbNombre_modificar.TabStop = true;
+            rdbNombre_modificar.Text = "Nombre";
+            rdbNombre_modificar.UseVisualStyleBackColor = true;
+            // 
+            // lblBuscarModificar
+            // 
+            lblBuscarModificar.AutoSize = true;
+            lblBuscarModificar.Location = new Point(6, 19);
+            lblBuscarModificar.Name = "lblBuscarModificar";
+            lblBuscarModificar.Size = new Size(84, 15);
+            lblBuscarModificar.TabIndex = 16;
+            lblBuscarModificar.Text = "Buscar por:";
+            // 
+            // txtBusqueda_modificar
+            // 
+            txtBusqueda_modificar.Location = new Point(6, 42);
+            txtBusqueda_modificar.Name = "txtBusqueda_modificar";
+            txtBusqueda_modificar.Size = new Size(324, 23);
+            txtBusqueda_modificar.TabIndex = 15;
+            // 
+            // eliminar
+            // 
+            eliminar.Controls.Add(btnEliminar);
+            eliminar.Controls.Add(txtCategorias_eliminar);
+            eliminar.Controls.Add(txtStock_eliminar);
+            eliminar.Controls.Add(txtPrecio_eliminar);
+            eliminar.Controls.Add(txtNombre_eliminar);
+            eliminar.Controls.Add(txtCodigo_eliminar);
+            eliminar.Controls.Add(txtDescripcion_eliminar);
+            eliminar.Controls.Add(lblCategorias_eliminar);
+            eliminar.Controls.Add(lblStock_eliminar);
+            eliminar.Controls.Add(lblPrecio_eliminar);
+            eliminar.Controls.Add(lblDescripcion_eliminar);
+            eliminar.Controls.Add(lblNombre_eliminar);
+            eliminar.Controls.Add(lblCodigo_eliminar);
+            eliminar.Controls.Add(gpbBuscar_eliminar);
+            eliminar.Location = new Point(4, 24);
+            eliminar.Name = "eliminar";
+            eliminar.Size = new Size(506, 309);
+            eliminar.TabIndex = 2;
+            eliminar.Text = "Eliminar";
+            eliminar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
@@ -651,15 +652,14 @@
             txtBuscar_eliminar.Size = new Size(324, 23);
             txtBuscar_eliminar.TabIndex = 15;
             // 
-            // label7
+            // reporte
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(118, 12);
-            label7.Name = "label7";
-            label7.Size = new Size(274, 24);
-            label7.TabIndex = 13;
-            label7.Text = "Agregar nuevo producto";
+            reporte.Location = new Point(4, 24);
+            reporte.Name = "reporte";
+            reporte.Size = new Size(506, 309);
+            reporte.TabIndex = 3;
+            reporte.Text = "Reporte";
+            reporte.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -671,15 +671,16 @@
             Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "frmMain";
             Text = "Gestion de Inventario";
+            Load += frmMain_Load;
             tabControl1.ResumeLayout(false);
             agregar.ResumeLayout(false);
             agregar.PerformLayout();
             modificar.ResumeLayout(false);
             modificar.PerformLayout();
-            eliminar.ResumeLayout(false);
-            eliminar.PerformLayout();
             gpbBuscarModificar.ResumeLayout(false);
             gpbBuscarModificar.PerformLayout();
+            eliminar.ResumeLayout(false);
+            eliminar.PerformLayout();
             gpbBuscar_eliminar.ResumeLayout(false);
             gpbBuscar_eliminar.PerformLayout();
             ResumeLayout(false);

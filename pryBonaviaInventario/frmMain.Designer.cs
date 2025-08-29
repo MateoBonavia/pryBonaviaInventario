@@ -286,7 +286,7 @@
             // 
             btnAgregar.Location = new Point(220, 269);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(172, 23);
+            btnAgregar.Size = new Size(172, 24);
             btnAgregar.TabIndex = 12;
             btnAgregar.Text = "Guardar";
             btnAgregar.UseVisualStyleBackColor = true;

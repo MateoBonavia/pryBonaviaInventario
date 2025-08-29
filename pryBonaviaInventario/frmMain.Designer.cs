@@ -86,6 +86,7 @@
             rdbNombre_eliminar = new RadioButton();
             label13 = new Label();
             txtBuscar_eliminar = new TextBox();
+            label7 = new Label();
             tabControl1.SuspendLayout();
             agregar.SuspendLayout();
             modificar.SuspendLayout();
@@ -103,11 +104,12 @@
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(514, 393);
+            tabControl1.Size = new Size(514, 337);
             tabControl1.TabIndex = 0;
             // 
             // agregar
             // 
+            agregar.Controls.Add(label7);
             agregar.Controls.Add(btnAgregar);
             agregar.Controls.Add(txtAgregarCategorias);
             agregar.Controls.Add(txtAgregarStock);
@@ -124,7 +126,7 @@
             agregar.Location = new Point(4, 24);
             agregar.Name = "agregar";
             agregar.Padding = new Padding(3);
-            agregar.Size = new Size(506, 365);
+            agregar.Size = new Size(506, 309);
             agregar.TabIndex = 0;
             agregar.Text = "Agregar";
             agregar.UseVisualStyleBackColor = true;
@@ -148,7 +150,7 @@
             modificar.Location = new Point(4, 24);
             modificar.Name = "modificar";
             modificar.Padding = new Padding(3);
-            modificar.Size = new Size(506, 365);
+            modificar.Size = new Size(506, 309);
             modificar.TabIndex = 1;
             modificar.Text = "Modificar";
             modificar.UseVisualStyleBackColor = true;
@@ -171,7 +173,7 @@
             eliminar.Controls.Add(gpbBuscar_eliminar);
             eliminar.Location = new Point(4, 24);
             eliminar.Name = "eliminar";
-            eliminar.Size = new Size(506, 365);
+            eliminar.Size = new Size(506, 309);
             eliminar.TabIndex = 2;
             eliminar.Text = "Eliminar";
             eliminar.UseVisualStyleBackColor = true;
@@ -180,7 +182,7 @@
             // 
             reporte.Location = new Point(4, 24);
             reporte.Name = "reporte";
-            reporte.Size = new Size(768, 398);
+            reporte.Size = new Size(506, 309);
             reporte.TabIndex = 3;
             reporte.Text = "Reporte";
             reporte.UseVisualStyleBackColor = true;
@@ -472,7 +474,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(348, 289);
+            btnEliminar.Location = new Point(347, 278);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(146, 24);
             btnEliminar.TabIndex = 34;
@@ -481,42 +483,42 @@
             // 
             // txtCategorias_eliminar
             // 
-            txtCategorias_eliminar.Location = new Point(114, 220);
+            txtCategorias_eliminar.Location = new Point(113, 209);
             txtCategorias_eliminar.Name = "txtCategorias_eliminar";
             txtCategorias_eliminar.Size = new Size(172, 23);
             txtCategorias_eliminar.TabIndex = 37;
             // 
             // txtStock_eliminar
             // 
-            txtStock_eliminar.Location = new Point(114, 191);
+            txtStock_eliminar.Location = new Point(113, 180);
             txtStock_eliminar.Name = "txtStock_eliminar";
             txtStock_eliminar.Size = new Size(172, 23);
             txtStock_eliminar.TabIndex = 36;
             // 
             // txtPrecio_eliminar
             // 
-            txtPrecio_eliminar.Location = new Point(114, 162);
+            txtPrecio_eliminar.Location = new Point(113, 151);
             txtPrecio_eliminar.Name = "txtPrecio_eliminar";
             txtPrecio_eliminar.Size = new Size(172, 23);
             txtPrecio_eliminar.TabIndex = 35;
             // 
             // txtNombre_eliminar
             // 
-            txtNombre_eliminar.Location = new Point(114, 133);
+            txtNombre_eliminar.Location = new Point(113, 122);
             txtNombre_eliminar.Name = "txtNombre_eliminar";
             txtNombre_eliminar.Size = new Size(172, 23);
             txtNombre_eliminar.TabIndex = 33;
             // 
             // txtCodigo_eliminar
             // 
-            txtCodigo_eliminar.Location = new Point(114, 104);
+            txtCodigo_eliminar.Location = new Point(113, 93);
             txtCodigo_eliminar.Name = "txtCodigo_eliminar";
             txtCodigo_eliminar.Size = new Size(172, 23);
             txtCodigo_eliminar.TabIndex = 32;
             // 
             // txtDescripcion_eliminar
             // 
-            txtDescripcion_eliminar.Location = new Point(114, 249);
+            txtDescripcion_eliminar.Location = new Point(113, 238);
             txtDescripcion_eliminar.Multiline = true;
             txtDescripcion_eliminar.Name = "txtDescripcion_eliminar";
             txtDescripcion_eliminar.Size = new Size(172, 64);
@@ -525,7 +527,7 @@
             // lblCategorias_eliminar
             // 
             lblCategorias_eliminar.AutoSize = true;
-            lblCategorias_eliminar.Location = new Point(12, 223);
+            lblCategorias_eliminar.Location = new Point(11, 212);
             lblCategorias_eliminar.Name = "lblCategorias_eliminar";
             lblCategorias_eliminar.Size = new Size(77, 15);
             lblCategorias_eliminar.TabIndex = 30;
@@ -543,7 +545,7 @@
             // lblPrecio_eliminar
             // 
             lblPrecio_eliminar.AutoSize = true;
-            lblPrecio_eliminar.Location = new Point(12, 165);
+            lblPrecio_eliminar.Location = new Point(11, 154);
             lblPrecio_eliminar.Name = "lblPrecio_eliminar";
             lblPrecio_eliminar.Size = new Size(49, 15);
             lblPrecio_eliminar.TabIndex = 28;
@@ -552,7 +554,7 @@
             // lblDescripcion_eliminar
             // 
             lblDescripcion_eliminar.AutoSize = true;
-            lblDescripcion_eliminar.Location = new Point(12, 252);
+            lblDescripcion_eliminar.Location = new Point(11, 241);
             lblDescripcion_eliminar.Name = "lblDescripcion_eliminar";
             lblDescripcion_eliminar.Size = new Size(84, 15);
             lblDescripcion_eliminar.TabIndex = 27;
@@ -561,7 +563,7 @@
             // lblNombre_eliminar
             // 
             lblNombre_eliminar.AutoSize = true;
-            lblNombre_eliminar.Location = new Point(12, 136);
+            lblNombre_eliminar.Location = new Point(11, 125);
             lblNombre_eliminar.Name = "lblNombre_eliminar";
             lblNombre_eliminar.Size = new Size(49, 15);
             lblNombre_eliminar.TabIndex = 26;
@@ -570,7 +572,7 @@
             // lblCodigo_eliminar
             // 
             lblCodigo_eliminar.AutoSize = true;
-            lblCodigo_eliminar.Location = new Point(12, 107);
+            lblCodigo_eliminar.Location = new Point(11, 96);
             lblCodigo_eliminar.Name = "lblCodigo_eliminar";
             lblCodigo_eliminar.Size = new Size(49, 15);
             lblCodigo_eliminar.TabIndex = 25;
@@ -649,12 +651,22 @@
             txtBuscar_eliminar.Size = new Size(324, 23);
             txtBuscar_eliminar.TabIndex = 15;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(118, 12);
+            label7.Name = "label7";
+            label7.Size = new Size(274, 24);
+            label7.TabIndex = 13;
+            label7.Text = "Agregar nuevo producto";
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(539, 443);
+            ClientSize = new Size(539, 358);
             Controls.Add(tabControl1);
             Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "frmMain";
@@ -733,5 +745,6 @@
         private RadioButton rdbNombre_eliminar;
         private Label label13;
         private TextBox txtBuscar_eliminar;
+        private Label label7;
     }
 }

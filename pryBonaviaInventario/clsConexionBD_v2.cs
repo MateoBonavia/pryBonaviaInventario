@@ -72,6 +72,7 @@ namespace pryBonaviaInventario
         {
             // Creo en memoria el objeto
             comandoBaseDatos = new OleDbCommand();
+
             // Cargo la conexion a la base
             comandoBaseDatos.Connection = coneccionBaseDatos;
 

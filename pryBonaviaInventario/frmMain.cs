@@ -22,6 +22,13 @@ namespace pryBonaviaInventario
             clsConexionBD clsConexionBD = new clsConexionBD();
 
             clsConexionBD.ConectarBD();
+
+            clsConexionBD.cargarCategorias(cmbCategoriasAgregar);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,6 +25,8 @@ namespace pryBonaviaInventario
         //SqlCommand comandoBaseDatos;
         OleDbCommand comandoBaseDatos;
 
+        OleDbDataReader lectorDataReader;
+
         public string nombreBaseDeDatos;
 
         public void ConectarBD()
@@ -38,13 +40,36 @@ namespace pryBonaviaInventario
 
                 coneccionBaseDatos.Open();
 
-                MessageBox.Show("Conectado a " + nombreBaseDeDatos);
+                // MessageBox.Show("Conectado a " + nombreBaseDeDatos);
             }
             catch (Exception error)
             {
                 MessageBox.Show("Tiene un errorcito - " + error.Message);
             }
 
+        }
+
+        public void cargarCategorias(ComboBox cmbCategorias)
+        {
+            // Creo en memoria el objeto
+            comandoBaseDatos = new OleDbCommand();
+            // Cargo la conexion a la base
+            comandoBaseDatos.Connection = coneccionBaseDatos;
+
+            // Dar indicaciones que quiero hacer en la db
+            comandoBaseDatos.CommandType = System.Data.CommandType.Text;
+            // sentencia SQL para consultar la base
+            comandoBaseDatos.CommandText = "SELECT marca_nombre FROM productos";
+            lectorDataReader = comandoBaseDatos.ExecuteReader();
+
+            while (lectorDataReader.Read())
+            { 
+                cmbCategorias.Items.Add(lectorDataReader[0]);
+            }
+        }
+
+        public void agregarProducto() { 
+            
         }
 
     }

@@ -30,9 +30,9 @@
         {
             tabControl1 = new TabControl();
             agregar = new TabPage();
+            cmbCategoriasAgregar = new ComboBox();
             label7 = new Label();
             btnAgregar = new Button();
-            txtAgregarCategorias = new TextBox();
             txtAgregarStock = new TextBox();
             txtAgregarPrecio = new TextBox();
             txtAgregarNombre = new TextBox();
@@ -109,9 +109,9 @@
             // 
             // agregar
             // 
+            agregar.Controls.Add(cmbCategoriasAgregar);
             agregar.Controls.Add(label7);
             agregar.Controls.Add(btnAgregar);
-            agregar.Controls.Add(txtAgregarCategorias);
             agregar.Controls.Add(txtAgregarStock);
             agregar.Controls.Add(txtAgregarPrecio);
             agregar.Controls.Add(txtAgregarNombre);
@@ -131,11 +131,19 @@
             agregar.Text = "Agregar";
             agregar.UseVisualStyleBackColor = true;
             // 
+            // cmbCategoriasAgregar
+            // 
+            cmbCategoriasAgregar.FormattingEnabled = true;
+            cmbCategoriasAgregar.Location = new Point(208, 180);
+            cmbCategoriasAgregar.Name = "cmbCategoriasAgregar";
+            cmbCategoriasAgregar.Size = new Size(172, 23);
+            cmbCategoriasAgregar.TabIndex = 14;
+            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(118, 12);
+            label7.Location = new Point(106, 11);
             label7.Name = "label7";
             label7.Size = new Size(274, 24);
             label7.TabIndex = 13;
@@ -143,51 +151,45 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(220, 269);
+            btnAgregar.Location = new Point(208, 268);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(172, 24);
             btnAgregar.TabIndex = 12;
             btnAgregar.Text = "Guardar";
             btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // txtAgregarCategorias
-            // 
-            txtAgregarCategorias.Location = new Point(220, 181);
-            txtAgregarCategorias.Name = "txtAgregarCategorias";
-            txtAgregarCategorias.Size = new Size(172, 23);
-            txtAgregarCategorias.TabIndex = 11;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // txtAgregarStock
             // 
-            txtAgregarStock.Location = new Point(220, 152);
+            txtAgregarStock.Location = new Point(208, 151);
             txtAgregarStock.Name = "txtAgregarStock";
             txtAgregarStock.Size = new Size(172, 23);
             txtAgregarStock.TabIndex = 10;
             // 
             // txtAgregarPrecio
             // 
-            txtAgregarPrecio.Location = new Point(220, 123);
+            txtAgregarPrecio.Location = new Point(208, 122);
             txtAgregarPrecio.Name = "txtAgregarPrecio";
             txtAgregarPrecio.Size = new Size(172, 23);
             txtAgregarPrecio.TabIndex = 9;
             // 
             // txtAgregarNombre
             // 
-            txtAgregarNombre.Location = new Point(220, 94);
+            txtAgregarNombre.Location = new Point(208, 93);
             txtAgregarNombre.Name = "txtAgregarNombre";
             txtAgregarNombre.Size = new Size(172, 23);
             txtAgregarNombre.TabIndex = 8;
             // 
             // txtAgregarCodigo
             // 
-            txtAgregarCodigo.Location = new Point(220, 65);
+            txtAgregarCodigo.Location = new Point(208, 64);
             txtAgregarCodigo.Name = "txtAgregarCodigo";
             txtAgregarCodigo.Size = new Size(172, 23);
             txtAgregarCodigo.TabIndex = 7;
             // 
             // txtAgregarDescripcion
             // 
-            txtAgregarDescripcion.Location = new Point(220, 210);
+            txtAgregarDescripcion.Location = new Point(208, 209);
             txtAgregarDescripcion.Multiline = true;
             txtAgregarDescripcion.Name = "txtAgregarDescripcion";
             txtAgregarDescripcion.Size = new Size(172, 53);
@@ -196,7 +198,7 @@
             // lblCategorias
             // 
             lblCategorias.AutoSize = true;
-            lblCategorias.Location = new Point(118, 184);
+            lblCategorias.Location = new Point(106, 183);
             lblCategorias.Name = "lblCategorias";
             lblCategorias.Size = new Size(77, 15);
             lblCategorias.TabIndex = 5;
@@ -205,7 +207,7 @@
             // lblStock
             // 
             lblStock.AutoSize = true;
-            lblStock.Location = new Point(118, 155);
+            lblStock.Location = new Point(106, 154);
             lblStock.Name = "lblStock";
             lblStock.Size = new Size(42, 15);
             lblStock.TabIndex = 4;
@@ -214,7 +216,7 @@
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(118, 126);
+            lblPrecio.Location = new Point(106, 125);
             lblPrecio.Name = "lblPrecio";
             lblPrecio.Size = new Size(49, 15);
             lblPrecio.TabIndex = 3;
@@ -223,7 +225,7 @@
             // lblDescripcion
             // 
             lblDescripcion.AutoSize = true;
-            lblDescripcion.Location = new Point(118, 213);
+            lblDescripcion.Location = new Point(106, 212);
             lblDescripcion.Name = "lblDescripcion";
             lblDescripcion.Size = new Size(84, 15);
             lblDescripcion.TabIndex = 2;
@@ -232,7 +234,7 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(118, 97);
+            lblNombre.Location = new Point(106, 96);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(49, 15);
             lblNombre.TabIndex = 1;
@@ -241,7 +243,7 @@
             // lblCodigo
             // 
             lblCodigo.AutoSize = true;
-            lblCodigo.Location = new Point(118, 68);
+            lblCodigo.Location = new Point(106, 67);
             lblCodigo.Name = "lblCodigo";
             lblCodigo.Size = new Size(49, 15);
             lblCodigo.TabIndex = 0;
@@ -699,7 +701,6 @@
         private TabPage modificar;
         private TabPage eliminar;
         private TabPage reporte;
-        private TextBox txtAgregarCategorias;
         private TextBox txtAgregarStock;
         private TextBox txtAgregarPrecio;
         private TextBox txtAgregarNombre;
@@ -747,5 +748,6 @@
         private Label label13;
         private TextBox txtBuscar_eliminar;
         private Label label7;
+        private ComboBox cmbCategoriasAgregar;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             tabControl1 = new TabControl();
             agregar = new TabPage();
             cmbCategoriasAgregar = new ComboBox();
@@ -671,6 +672,7 @@
             ClientSize = new Size(539, 358);
             Controls.Add(tabControl1);
             Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmMain";
             Text = "Gestion de Inventario";
             Load += frmMain_Load;

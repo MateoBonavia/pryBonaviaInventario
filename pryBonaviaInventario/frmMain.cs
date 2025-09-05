@@ -29,6 +29,20 @@ namespace pryBonaviaInventario
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
+            
+            
+            Int32 codigo = Convert.ToInt32(txtAgregarCodigo.Text);
+            Int32 categoria = cmbCategoriasAgregar.SelectedIndex;
+            String nombre = txtAgregarNombre.Text;
+            String observaciones = txtAgregarDescripcion.Text;
+
+            clsConexionBD clsConexionBD = new clsConexionBD();
+
+
+            clsConexionBD.ConectarBD();
+
+            clsConexionBD.agregarProducto(codigo, categoria, nombre, observaciones);
+
         }
     }
 }

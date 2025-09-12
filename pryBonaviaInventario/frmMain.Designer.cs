@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             tabControl1 = new TabControl();
-            agregar = new TabPage();
+            tpbAgregar = new TabPage();
             cmbCategoriasAgregar = new ComboBox();
             label7 = new Label();
             btnAgregar = new Button();
@@ -44,7 +44,7 @@
             lblDescripcion = new Label();
             lblNombre = new Label();
             lblCodigo = new Label();
-            modificar = new TabPage();
+            tpbModificar = new TabPage();
             btnModificar = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
@@ -65,7 +65,7 @@
             rdbNombre_modificar = new RadioButton();
             lblBuscarModificar = new Label();
             txtBusqueda_modificar = new TextBox();
-            eliminar = new TabPage();
+            tpbEliminar = new TabPage();
             btnEliminar = new Button();
             txtCategorias_eliminar = new TextBox();
             txtStock_eliminar = new TextBox();
@@ -86,50 +86,50 @@
             rdbNombre_eliminar = new RadioButton();
             label13 = new Label();
             txtBuscar_eliminar = new TextBox();
-            reporte = new TabPage();
+            tpbReporte = new TabPage();
             tabControl1.SuspendLayout();
-            agregar.SuspendLayout();
-            modificar.SuspendLayout();
+            tpbAgregar.SuspendLayout();
+            tpbModificar.SuspendLayout();
             gpbBuscarModificar.SuspendLayout();
-            eliminar.SuspendLayout();
+            tpbEliminar.SuspendLayout();
             gpbBuscar_eliminar.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(agregar);
-            tabControl1.Controls.Add(modificar);
-            tabControl1.Controls.Add(eliminar);
-            tabControl1.Controls.Add(reporte);
+            tabControl1.Controls.Add(tpbAgregar);
+            tabControl1.Controls.Add(tpbModificar);
+            tabControl1.Controls.Add(tpbEliminar);
+            tabControl1.Controls.Add(tpbReporte);
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(514, 337);
             tabControl1.TabIndex = 0;
             // 
-            // agregar
+            // tpbAgregar
             // 
-            agregar.Controls.Add(cmbCategoriasAgregar);
-            agregar.Controls.Add(label7);
-            agregar.Controls.Add(btnAgregar);
-            agregar.Controls.Add(txtAgregarStock);
-            agregar.Controls.Add(txtAgregarPrecio);
-            agregar.Controls.Add(txtAgregarNombre);
-            agregar.Controls.Add(txtAgregarCodigo);
-            agregar.Controls.Add(txtAgregarDescripcion);
-            agregar.Controls.Add(lblCategorias);
-            agregar.Controls.Add(lblStock);
-            agregar.Controls.Add(lblPrecio);
-            agregar.Controls.Add(lblDescripcion);
-            agregar.Controls.Add(lblNombre);
-            agregar.Controls.Add(lblCodigo);
-            agregar.Location = new Point(4, 24);
-            agregar.Name = "agregar";
-            agregar.Padding = new Padding(3);
-            agregar.Size = new Size(506, 309);
-            agregar.TabIndex = 0;
-            agregar.Text = "Agregar";
-            agregar.UseVisualStyleBackColor = true;
+            tpbAgregar.Controls.Add(cmbCategoriasAgregar);
+            tpbAgregar.Controls.Add(label7);
+            tpbAgregar.Controls.Add(btnAgregar);
+            tpbAgregar.Controls.Add(txtAgregarStock);
+            tpbAgregar.Controls.Add(txtAgregarPrecio);
+            tpbAgregar.Controls.Add(txtAgregarNombre);
+            tpbAgregar.Controls.Add(txtAgregarCodigo);
+            tpbAgregar.Controls.Add(txtAgregarDescripcion);
+            tpbAgregar.Controls.Add(lblCategorias);
+            tpbAgregar.Controls.Add(lblStock);
+            tpbAgregar.Controls.Add(lblPrecio);
+            tpbAgregar.Controls.Add(lblDescripcion);
+            tpbAgregar.Controls.Add(lblNombre);
+            tpbAgregar.Controls.Add(lblCodigo);
+            tpbAgregar.Location = new Point(4, 24);
+            tpbAgregar.Name = "tpbAgregar";
+            tpbAgregar.Padding = new Padding(3);
+            tpbAgregar.Size = new Size(506, 309);
+            tpbAgregar.TabIndex = 0;
+            tpbAgregar.Text = "Agregar";
+            tpbAgregar.UseVisualStyleBackColor = true;
             // 
             // cmbCategoriasAgregar
             // 
@@ -249,29 +249,29 @@
             lblCodigo.TabIndex = 0;
             lblCodigo.Text = "Código";
             // 
-            // modificar
+            // tpbModificar
             // 
-            modificar.Controls.Add(btnModificar);
-            modificar.Controls.Add(textBox1);
-            modificar.Controls.Add(textBox2);
-            modificar.Controls.Add(textBox3);
-            modificar.Controls.Add(textBox4);
-            modificar.Controls.Add(textBox5);
-            modificar.Controls.Add(textBox6);
-            modificar.Controls.Add(label1);
-            modificar.Controls.Add(label2);
-            modificar.Controls.Add(label3);
-            modificar.Controls.Add(label4);
-            modificar.Controls.Add(label5);
-            modificar.Controls.Add(label6);
-            modificar.Controls.Add(gpbBuscarModificar);
-            modificar.Location = new Point(4, 24);
-            modificar.Name = "modificar";
-            modificar.Padding = new Padding(3);
-            modificar.Size = new Size(506, 309);
-            modificar.TabIndex = 1;
-            modificar.Text = "Modificar";
-            modificar.UseVisualStyleBackColor = true;
+            tpbModificar.Controls.Add(btnModificar);
+            tpbModificar.Controls.Add(textBox1);
+            tpbModificar.Controls.Add(textBox2);
+            tpbModificar.Controls.Add(textBox3);
+            tpbModificar.Controls.Add(textBox4);
+            tpbModificar.Controls.Add(textBox5);
+            tpbModificar.Controls.Add(textBox6);
+            tpbModificar.Controls.Add(label1);
+            tpbModificar.Controls.Add(label2);
+            tpbModificar.Controls.Add(label3);
+            tpbModificar.Controls.Add(label4);
+            tpbModificar.Controls.Add(label5);
+            tpbModificar.Controls.Add(label6);
+            tpbModificar.Controls.Add(gpbBuscarModificar);
+            tpbModificar.Location = new Point(4, 24);
+            tpbModificar.Name = "tpbModificar";
+            tpbModificar.Padding = new Padding(3);
+            tpbModificar.Size = new Size(506, 309);
+            tpbModificar.TabIndex = 1;
+            tpbModificar.Text = "Modificar";
+            tpbModificar.UseVisualStyleBackColor = true;
             // 
             // btnModificar
             // 
@@ -452,28 +452,28 @@
             txtBusqueda_modificar.Size = new Size(324, 23);
             txtBusqueda_modificar.TabIndex = 15;
             // 
-            // eliminar
+            // tpbEliminar
             // 
-            eliminar.Controls.Add(btnEliminar);
-            eliminar.Controls.Add(txtCategorias_eliminar);
-            eliminar.Controls.Add(txtStock_eliminar);
-            eliminar.Controls.Add(txtPrecio_eliminar);
-            eliminar.Controls.Add(txtNombre_eliminar);
-            eliminar.Controls.Add(txtCodigo_eliminar);
-            eliminar.Controls.Add(txtDescripcion_eliminar);
-            eliminar.Controls.Add(lblCategorias_eliminar);
-            eliminar.Controls.Add(lblStock_eliminar);
-            eliminar.Controls.Add(lblPrecio_eliminar);
-            eliminar.Controls.Add(lblDescripcion_eliminar);
-            eliminar.Controls.Add(lblNombre_eliminar);
-            eliminar.Controls.Add(lblCodigo_eliminar);
-            eliminar.Controls.Add(gpbBuscar_eliminar);
-            eliminar.Location = new Point(4, 24);
-            eliminar.Name = "eliminar";
-            eliminar.Size = new Size(506, 309);
-            eliminar.TabIndex = 2;
-            eliminar.Text = "Eliminar";
-            eliminar.UseVisualStyleBackColor = true;
+            tpbEliminar.Controls.Add(btnEliminar);
+            tpbEliminar.Controls.Add(txtCategorias_eliminar);
+            tpbEliminar.Controls.Add(txtStock_eliminar);
+            tpbEliminar.Controls.Add(txtPrecio_eliminar);
+            tpbEliminar.Controls.Add(txtNombre_eliminar);
+            tpbEliminar.Controls.Add(txtCodigo_eliminar);
+            tpbEliminar.Controls.Add(txtDescripcion_eliminar);
+            tpbEliminar.Controls.Add(lblCategorias_eliminar);
+            tpbEliminar.Controls.Add(lblStock_eliminar);
+            tpbEliminar.Controls.Add(lblPrecio_eliminar);
+            tpbEliminar.Controls.Add(lblDescripcion_eliminar);
+            tpbEliminar.Controls.Add(lblNombre_eliminar);
+            tpbEliminar.Controls.Add(lblCodigo_eliminar);
+            tpbEliminar.Controls.Add(gpbBuscar_eliminar);
+            tpbEliminar.Location = new Point(4, 24);
+            tpbEliminar.Name = "tpbEliminar";
+            tpbEliminar.Size = new Size(506, 309);
+            tpbEliminar.TabIndex = 2;
+            tpbEliminar.Text = "Eliminar";
+            tpbEliminar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
@@ -654,14 +654,14 @@
             txtBuscar_eliminar.Size = new Size(324, 23);
             txtBuscar_eliminar.TabIndex = 15;
             // 
-            // reporte
+            // tpbReporte
             // 
-            reporte.Location = new Point(4, 24);
-            reporte.Name = "reporte";
-            reporte.Size = new Size(506, 309);
-            reporte.TabIndex = 3;
-            reporte.Text = "Reporte";
-            reporte.UseVisualStyleBackColor = true;
+            tpbReporte.Location = new Point(4, 24);
+            tpbReporte.Name = "tpbReporte";
+            tpbReporte.Size = new Size(506, 309);
+            tpbReporte.TabIndex = 3;
+            tpbReporte.Text = "Reporte";
+            tpbReporte.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -675,14 +675,14 @@
             Text = "Gestion de Inventario";
             Load += frmMain_Load;
             tabControl1.ResumeLayout(false);
-            agregar.ResumeLayout(false);
-            agregar.PerformLayout();
-            modificar.ResumeLayout(false);
-            modificar.PerformLayout();
+            tpbAgregar.ResumeLayout(false);
+            tpbAgregar.PerformLayout();
+            tpbModificar.ResumeLayout(false);
+            tpbModificar.PerformLayout();
             gpbBuscarModificar.ResumeLayout(false);
             gpbBuscarModificar.PerformLayout();
-            eliminar.ResumeLayout(false);
-            eliminar.PerformLayout();
+            tpbEliminar.ResumeLayout(false);
+            tpbEliminar.PerformLayout();
             gpbBuscar_eliminar.ResumeLayout(false);
             gpbBuscar_eliminar.PerformLayout();
             ResumeLayout(false);
@@ -691,16 +691,16 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage agregar;
+        private TabPage tpbAgregar;
         private Label lblCategorias;
         private Label lblStock;
         private Label lblPrecio;
         private Label lblDescripcion;
         private Label lblNombre;
         private Label lblCodigo;
-        private TabPage modificar;
-        private TabPage eliminar;
-        private TabPage reporte;
+        private TabPage tpbModificar;
+        private TabPage tpbEliminar;
+        private TabPage tpbReporte;
         private TextBox txtAgregarStock;
         private TextBox txtAgregarPrecio;
         private TextBox txtAgregarNombre;

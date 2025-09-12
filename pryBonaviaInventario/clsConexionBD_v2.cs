@@ -63,13 +63,29 @@ namespace pryBonaviaInventario
             lectorDataReader = comandoBaseDatos.ExecuteReader();
 
             while (lectorDataReader.Read())
-            { 
+            {
                 cmbCategorias.Items.Add(lectorDataReader[0]);
             }
         }
 
-        public void agregarProducto() { 
-            
+        public void agregarProducto(Int32 cod, String nombre, Int32 categoria, String observaciones)
+        {
+            // Creo en memoria el objeto
+            comandoBaseDatos = new OleDbCommand();
+            // Cargo la conexion a la base
+            comandoBaseDatos.Connection = coneccionBaseDatos;
+
+            // Dar indicaciones que quiero hacer en la db
+            comandoBaseDatos.CommandType = System.Data.CommandType.Text;
+            // sentencia SQL para consultar la base
+            comandoBaseDatos.CommandText = "INSERT INTO productos (codigo, marca_nombre, categoria_de_producto, observaciones) VALUES (?, ?, ?, ?)";
+
+            comandoBaseDatos.Parameters.AddWithValue("?", cod);
+            comandoBaseDatos.Parameters.AddWithValue("?", nombre);
+            comandoBaseDatos.Parameters.AddWithValue("?", categoria);
+            comandoBaseDatos.Parameters.AddWithValue("?", observaciones);
+
+            comandoBaseDatos.ExecuteNonQuery();
         }
 
     }

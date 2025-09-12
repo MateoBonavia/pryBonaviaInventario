@@ -17,6 +17,8 @@ namespace pryBonaviaInventario
     {
         //cadena de conexion
         //sql - string cadenaConexion = "Server=localhost;Database=Ventas2;Trusted_Connection=True;";
+        // string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = ..\\..\\..\\db\\GestionInventario.accdb";
+
         string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = ..\\..\\..\\db\\GestionInventario.accdb";
         //conector
         //SqlConnection coneccionBaseDatos;
@@ -86,6 +88,27 @@ namespace pryBonaviaInventario
             comandoBaseDatos.Parameters.AddWithValue("?", observaciones);
 
             comandoBaseDatos.ExecuteNonQuery();
+        }
+
+        public void buscarId(Int32 id, TextBox codigo, TextBox nombre, TextBox cat, TextBox desc) {
+            // Creo en memoria el objeto
+            comandoBaseDatos = new OleDbCommand();
+            // Cargo la conexion a la base
+            comandoBaseDatos.Connection = coneccionBaseDatos;
+
+            // Dar indicaciones que quiero hacer en la db
+            comandoBaseDatos.CommandType = System.Data.CommandType.Text;
+            // sentencia SQL para consultar la base
+            comandoBaseDatos.CommandText = $"SELECT * FROM productos WHERE id={id}";
+
+            lectorDataReader = comandoBaseDatos.ExecuteReader();
+
+            // MessageBox.Show(lectorDataReader);
+
+            //while (lectorDataReader.Read())
+            //{
+            //    cmbCategorias.Items.Add(lectorDataReader[0]);
+            //}
         }
 
     }

@@ -31,7 +31,7 @@
             tabControl1 = new TabControl();
             tpbAgregar = new TabPage();
             cmbCategoriasAgregar = new ComboBox();
-            label7 = new Label();
+            lblTituloAgregar = new Label();
             btnAgregar = new Button();
             txtAgregarStock = new TextBox();
             txtAgregarPrecio = new TextBox();
@@ -46,18 +46,18 @@
             lblCodigo = new Label();
             tpbModificar = new TabPage();
             btnModificar = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            txtCategoriaModificar = new TextBox();
+            txtStockModificar = new TextBox();
+            txtPrecioModificar = new TextBox();
+            txtNombreModificar = new TextBox();
+            txtCodigoModificar = new TextBox();
+            txtDescripcionModificar = new TextBox();
+            lblCatModificar = new Label();
+            lblStockModificar = new Label();
+            lblPrecioModificar = new Label();
+            lblDescModificar = new Label();
+            lblNombreModificar = new Label();
+            lblCodModificar = new Label();
             gpbBuscarModificar = new GroupBox();
             btnBuscar_modificar = new Button();
             rdbCategoria_modificar = new RadioButton();
@@ -84,7 +84,7 @@
             rdbCategoria_eliminar = new RadioButton();
             rdbCodigo_eliminar = new RadioButton();
             rdbNombre_eliminar = new RadioButton();
-            label13 = new Label();
+            lblBuscarEliminar = new Label();
             txtBuscar_eliminar = new TextBox();
             tpbReporte = new TabPage();
             tabControl1.SuspendLayout();
@@ -110,7 +110,7 @@
             // tpbAgregar
             // 
             tpbAgregar.Controls.Add(cmbCategoriasAgregar);
-            tpbAgregar.Controls.Add(label7);
+            tpbAgregar.Controls.Add(lblTituloAgregar);
             tpbAgregar.Controls.Add(btnAgregar);
             tpbAgregar.Controls.Add(txtAgregarStock);
             tpbAgregar.Controls.Add(txtAgregarPrecio);
@@ -139,15 +139,15 @@
             cmbCategoriasAgregar.Size = new Size(172, 23);
             cmbCategoriasAgregar.TabIndex = 14;
             // 
-            // label7
+            // lblTituloAgregar
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(106, 11);
-            label7.Name = "label7";
-            label7.Size = new Size(274, 24);
-            label7.TabIndex = 13;
-            label7.Text = "Agregar nuevo producto";
+            lblTituloAgregar.AutoSize = true;
+            lblTituloAgregar.Font = new Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTituloAgregar.Location = new Point(106, 11);
+            lblTituloAgregar.Name = "lblTituloAgregar";
+            lblTituloAgregar.Size = new Size(274, 24);
+            lblTituloAgregar.TabIndex = 13;
+            lblTituloAgregar.Text = "Agregar nuevo producto";
             // 
             // btnAgregar
             // 
@@ -163,14 +163,14 @@
             // 
             txtAgregarStock.Location = new Point(208, 151);
             txtAgregarStock.Name = "txtAgregarStock";
-            txtAgregarStock.Size = new Size(172, 23);
+            txtAgregarStock.Size = new Size(74, 23);
             txtAgregarStock.TabIndex = 10;
             // 
             // txtAgregarPrecio
             // 
             txtAgregarPrecio.Location = new Point(208, 122);
             txtAgregarPrecio.Name = "txtAgregarPrecio";
-            txtAgregarPrecio.Size = new Size(172, 23);
+            txtAgregarPrecio.Size = new Size(74, 23);
             txtAgregarPrecio.TabIndex = 9;
             // 
             // txtAgregarNombre
@@ -184,7 +184,7 @@
             // 
             txtAgregarCodigo.Location = new Point(208, 64);
             txtAgregarCodigo.Name = "txtAgregarCodigo";
-            txtAgregarCodigo.Size = new Size(172, 23);
+            txtAgregarCodigo.Size = new Size(74, 23);
             txtAgregarCodigo.TabIndex = 7;
             // 
             // txtAgregarDescripcion
@@ -252,18 +252,18 @@
             // tpbModificar
             // 
             tpbModificar.Controls.Add(btnModificar);
-            tpbModificar.Controls.Add(textBox1);
-            tpbModificar.Controls.Add(textBox2);
-            tpbModificar.Controls.Add(textBox3);
-            tpbModificar.Controls.Add(textBox4);
-            tpbModificar.Controls.Add(textBox5);
-            tpbModificar.Controls.Add(textBox6);
-            tpbModificar.Controls.Add(label1);
-            tpbModificar.Controls.Add(label2);
-            tpbModificar.Controls.Add(label3);
-            tpbModificar.Controls.Add(label4);
-            tpbModificar.Controls.Add(label5);
-            tpbModificar.Controls.Add(label6);
+            tpbModificar.Controls.Add(txtCategoriaModificar);
+            tpbModificar.Controls.Add(txtStockModificar);
+            tpbModificar.Controls.Add(txtPrecioModificar);
+            tpbModificar.Controls.Add(txtNombreModificar);
+            tpbModificar.Controls.Add(txtCodigoModificar);
+            tpbModificar.Controls.Add(txtDescripcionModificar);
+            tpbModificar.Controls.Add(lblCatModificar);
+            tpbModificar.Controls.Add(lblStockModificar);
+            tpbModificar.Controls.Add(lblPrecioModificar);
+            tpbModificar.Controls.Add(lblDescModificar);
+            tpbModificar.Controls.Add(lblNombreModificar);
+            tpbModificar.Controls.Add(lblCodModificar);
             tpbModificar.Controls.Add(gpbBuscarModificar);
             tpbModificar.Location = new Point(4, 24);
             tpbModificar.Name = "tpbModificar";
@@ -282,102 +282,102 @@
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtCategoriaModificar
             // 
-            textBox1.Location = new Point(114, 218);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(172, 23);
-            textBox1.TabIndex = 23;
+            txtCategoriaModificar.Location = new Point(114, 218);
+            txtCategoriaModificar.Name = "txtCategoriaModificar";
+            txtCategoriaModificar.Size = new Size(172, 23);
+            txtCategoriaModificar.TabIndex = 23;
             // 
-            // textBox2
+            // txtStockModificar
             // 
-            textBox2.Location = new Point(114, 189);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(172, 23);
-            textBox2.TabIndex = 22;
+            txtStockModificar.Location = new Point(114, 189);
+            txtStockModificar.Name = "txtStockModificar";
+            txtStockModificar.Size = new Size(172, 23);
+            txtStockModificar.TabIndex = 22;
             // 
-            // textBox3
+            // txtPrecioModificar
             // 
-            textBox3.Location = new Point(114, 160);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(172, 23);
-            textBox3.TabIndex = 21;
+            txtPrecioModificar.Location = new Point(114, 160);
+            txtPrecioModificar.Name = "txtPrecioModificar";
+            txtPrecioModificar.Size = new Size(172, 23);
+            txtPrecioModificar.TabIndex = 21;
             // 
-            // textBox4
+            // txtNombreModificar
             // 
-            textBox4.Location = new Point(114, 131);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(172, 23);
-            textBox4.TabIndex = 20;
+            txtNombreModificar.Location = new Point(114, 131);
+            txtNombreModificar.Name = "txtNombreModificar";
+            txtNombreModificar.Size = new Size(172, 23);
+            txtNombreModificar.TabIndex = 20;
             // 
-            // textBox5
+            // txtCodigoModificar
             // 
-            textBox5.Location = new Point(114, 96);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(172, 23);
-            textBox5.TabIndex = 19;
+            txtCodigoModificar.Location = new Point(114, 96);
+            txtCodigoModificar.Name = "txtCodigoModificar";
+            txtCodigoModificar.Size = new Size(172, 23);
+            txtCodigoModificar.TabIndex = 19;
             // 
-            // textBox6
+            // txtDescripcionModificar
             // 
-            textBox6.Location = new Point(114, 247);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(172, 55);
-            textBox6.TabIndex = 18;
+            txtDescripcionModificar.Location = new Point(114, 247);
+            txtDescripcionModificar.Multiline = true;
+            txtDescripcionModificar.Name = "txtDescripcionModificar";
+            txtDescripcionModificar.Size = new Size(172, 55);
+            txtDescripcionModificar.TabIndex = 18;
             // 
-            // label1
+            // lblCatModificar
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 221);
-            label1.Name = "label1";
-            label1.Size = new Size(77, 15);
-            label1.TabIndex = 17;
-            label1.Text = "Categorías";
+            lblCatModificar.AutoSize = true;
+            lblCatModificar.Location = new Point(12, 221);
+            lblCatModificar.Name = "lblCatModificar";
+            lblCatModificar.Size = new Size(77, 15);
+            lblCatModificar.TabIndex = 17;
+            lblCatModificar.Text = "Categorías";
             // 
-            // label2
+            // lblStockModificar
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 192);
-            label2.Name = "label2";
-            label2.Size = new Size(42, 15);
-            label2.TabIndex = 16;
-            label2.Text = "Stock";
+            lblStockModificar.AutoSize = true;
+            lblStockModificar.Location = new Point(12, 192);
+            lblStockModificar.Name = "lblStockModificar";
+            lblStockModificar.Size = new Size(42, 15);
+            lblStockModificar.TabIndex = 16;
+            lblStockModificar.Text = "Stock";
             // 
-            // label3
+            // lblPrecioModificar
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 163);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 15);
-            label3.TabIndex = 15;
-            label3.Text = "Precio";
+            lblPrecioModificar.AutoSize = true;
+            lblPrecioModificar.Location = new Point(12, 163);
+            lblPrecioModificar.Name = "lblPrecioModificar";
+            lblPrecioModificar.Size = new Size(49, 15);
+            lblPrecioModificar.TabIndex = 15;
+            lblPrecioModificar.Text = "Precio";
             // 
-            // label4
+            // lblDescModificar
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(12, 250);
-            label4.Name = "label4";
-            label4.Size = new Size(84, 15);
-            label4.TabIndex = 14;
-            label4.Text = "Descripción";
+            lblDescModificar.AutoSize = true;
+            lblDescModificar.Location = new Point(12, 250);
+            lblDescModificar.Name = "lblDescModificar";
+            lblDescModificar.Size = new Size(84, 15);
+            lblDescModificar.TabIndex = 14;
+            lblDescModificar.Text = "Descripción";
             // 
-            // label5
+            // lblNombreModificar
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(12, 134);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 15);
-            label5.TabIndex = 13;
-            label5.Text = "Nombre";
+            lblNombreModificar.AutoSize = true;
+            lblNombreModificar.Location = new Point(12, 134);
+            lblNombreModificar.Name = "lblNombreModificar";
+            lblNombreModificar.Size = new Size(49, 15);
+            lblNombreModificar.TabIndex = 13;
+            lblNombreModificar.Text = "Nombre";
             // 
-            // label6
+            // lblCodModificar
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(12, 99);
-            label6.Name = "label6";
-            label6.Size = new Size(49, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Código";
+            lblCodModificar.AutoSize = true;
+            lblCodModificar.Location = new Point(12, 99);
+            lblCodModificar.Name = "lblCodModificar";
+            lblCodModificar.Size = new Size(49, 15);
+            lblCodModificar.TabIndex = 12;
+            lblCodModificar.Text = "Código";
             // 
             // gpbBuscarModificar
             // 
@@ -587,7 +587,7 @@
             gpbBuscar_eliminar.Controls.Add(rdbCategoria_eliminar);
             gpbBuscar_eliminar.Controls.Add(rdbCodigo_eliminar);
             gpbBuscar_eliminar.Controls.Add(rdbNombre_eliminar);
-            gpbBuscar_eliminar.Controls.Add(label13);
+            gpbBuscar_eliminar.Controls.Add(lblBuscarEliminar);
             gpbBuscar_eliminar.Controls.Add(txtBuscar_eliminar);
             gpbBuscar_eliminar.Location = new Point(6, 8);
             gpbBuscar_eliminar.Name = "gpbBuscar_eliminar";
@@ -638,14 +638,14 @@
             rdbNombre_eliminar.Text = "Nombre";
             rdbNombre_eliminar.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // lblBuscarEliminar
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(6, 19);
-            label13.Name = "label13";
-            label13.Size = new Size(84, 15);
-            label13.TabIndex = 16;
-            label13.Text = "Buscar por:";
+            lblBuscarEliminar.AutoSize = true;
+            lblBuscarEliminar.Location = new Point(6, 19);
+            lblBuscarEliminar.Name = "lblBuscarEliminar";
+            lblBuscarEliminar.Size = new Size(84, 15);
+            lblBuscarEliminar.TabIndex = 16;
+            lblBuscarEliminar.Text = "Buscar por:";
             // 
             // txtBuscar_eliminar
             // 
@@ -715,18 +715,18 @@
         private RadioButton rdbCodigo_modificar;
         private RadioButton rdbNombre_modificar;
         private Button btnModificar;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private TextBox txtCategoriaModificar;
+        private TextBox txtStockModificar;
+        private TextBox txtPrecioModificar;
+        private TextBox txtNombreModificar;
+        private TextBox txtCodigoModificar;
+        private TextBox txtDescripcionModificar;
+        private Label lblCatModificar;
+        private Label lblStockModificar;
+        private Label lblPrecioModificar;
+        private Label lblDescModificar;
+        private Label lblNombreModificar;
+        private Label lblCodModificar;
         private Button btnEliminar;
         private TextBox txtCategorias_eliminar;
         private TextBox txtStock_eliminar;
@@ -745,9 +745,9 @@
         private RadioButton rdbCategoria_eliminar;
         private RadioButton rdbCodigo_eliminar;
         private RadioButton rdbNombre_eliminar;
-        private Label label13;
+        private Label lblBuscarEliminar;
         private TextBox txtBuscar_eliminar;
-        private Label label7;
+        private Label lblTituloAgregar;
         private ComboBox cmbCategoriasAgregar;
     }
 }

@@ -19,25 +19,25 @@ namespace pryBonaviaInventario
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            clsConexionBD clsConexionBD = new clsConexionBD();
+            clsConexionBDSQL clsConexionBD = new clsConexionBDSQL();
 
             clsConexionBD.ConectarBD();
 
-            clsConexionBD.cargarCategorias(cmbCategoriasAgregar);
+            clsConexionBD.cargarMarcas(cmbCategoriasAgregar);
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            clsConexionBD clsConexionBD = new clsConexionBD();
+            //clsConexionBD clsConexionBD = new clsConexionBD();
 
-            clsConexionBD.ConectarBD();
+            //clsConexionBD.ConectarBD();
 
-            Int32 cod = Convert.ToInt32(txtAgregarCodigo.Text);
-            String nombre = txtAgregarNombre.Text;
-            Int32 categoria = cmbCategoriasAgregar.SelectedIndex + 1;
-            String descripcion = txtAgregarDescripcion.Text;
+            //Int32 cod = Convert.ToInt32(txtAgregarCodigo.Text);
+            //String nombre = txtAgregarNombre.Text;
+            //Int32 categoria = cmbCategoriasAgregar.SelectedIndex + 1;
+            //String descripcion = txtAgregarDescripcion.Text;
 
-            clsConexionBD.agregarProducto(cod, nombre, categoria, descripcion);
+            //clsConexionBD.agregarProducto(cod, nombre, categoria, descripcion);
         }
     }
 }

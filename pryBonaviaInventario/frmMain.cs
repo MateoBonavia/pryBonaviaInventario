@@ -23,7 +23,7 @@ namespace pryBonaviaInventario
 
             clsConexionBD.ConectarBD();
 
-            clsConexionBD.cargarMarcas(cmbCategoriasAgregar);
+            //clsConexionBD.cargarMarcas(cmbCategoriasAgregar);
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
